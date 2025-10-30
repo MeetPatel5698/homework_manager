@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+.env
+coverage/
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Tests output
+npm-debug.log*
