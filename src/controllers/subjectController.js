@@ -1,3 +1,11 @@
+/**
+ * Subject Controller:
+ *  - List current user's subjects
+ *  - Create a new subject for the current user
+ *  - Update an existing subject (owned by the current user)
+ *  - Delete an existing subject (owned by the current user)
+ */
+
 const { validationResult } = require("express-validator");
 const { success, fail } = require("../utils/response");
 const Subject = require("../models/Subject");

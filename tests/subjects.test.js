@@ -1,3 +1,12 @@
+/**
+ * Subjects API Integration Tests:
+ * Covers:
+ *  - POST   /api/subjects      -> create a subject
+ *  - GET    /api/subjects      -> list user's subjects
+ *  - PUT    /api/subjects/:id  -> update subject
+ *  - DELETE /api/subjects/:id  -> delete subject
+ */
+
 const {
   app,
   request,

@@ -1,3 +1,9 @@
+/**
+ * User Model:
+ * Represents an authenticated user of the Homework Task Manager.
+ * Stores username, email, and a securely hashed password.
+ */
+
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("../config/db");
 

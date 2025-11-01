@@ -1,3 +1,12 @@
+/**
+ * Subject Routes:
+ * Endpoints (all require authentication):
+ *   GET    /api/subjects        -> list current user's subjects
+ *   POST   /api/subjects        -> create a new subject
+ *   PUT    /api/subjects/:id    -> update an existing subject
+ *   DELETE /api/subjects/:id    -> delete a subject
+ */
+
 const express = require("express");
 const router = express.Router();
 

@@ -1,3 +1,11 @@
+/**
+ * Task Controller:
+ *  - List current user's tasks (with subject info)
+ *  - Create a task (subject ownership enforced)
+ *  - Update a task (optional subject reassignment with ownership check)
+ *  - Delete a task
+ */
+
 const { validationResult } = require("express-validator");
 const { success, fail } = require("../utils/response");
 const Task = require("../models/Task");

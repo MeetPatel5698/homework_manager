@@ -1,3 +1,12 @@
+/**
+ * Tasks API Integration Tests:
+ * Covers:
+ *  - POST   /api/tasks       -> create a task for an owned subject
+ *  - GET    /api/tasks       -> list tasks (with compact subject info)
+ *  - PUT    /api/tasks/:id   -> update task fields (status/priority)
+ *  - DELETE /api/tasks/:id   -> delete task
+ */
+
 const {
   app,
   request,

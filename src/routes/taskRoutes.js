@@ -1,3 +1,12 @@
+/**
+ * Task Routes:
+ * Endpoints (all require authentication):
+ *   GET    /api/tasks        -> list all tasks for the logged-in user
+ *   POST   /api/tasks        -> create a new task
+ *   PUT    /api/tasks/:id    -> update an existing task
+ *   DELETE /api/tasks/:id    -> delete a task
+ */
+
 const express = require("express");
 const router = express.Router();
 

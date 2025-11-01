@@ -1,3 +1,10 @@
+/**
+ * Purpose:
+ *   Bootstraps the Express server, mounts routes, connects to
+ *   the database via Sequelize, and registers centralized error
+ *   handling.
+ */
+
 require("dotenv").config();
 const express = require("express");
 const { sequelize } = require("./src/config/db");
@@ -8,7 +15,7 @@ require("./src/models/User");
 require("./src/models/Subject");
 require("./src/models/Task");
 
-// import routes
+// Import route modules
 const authRoutes = require("./src/routes/authRoutes");
 const subjectRoutes = require("./src/routes/subjectRoutes");
 const taskRoutes = require("./src/routes/taskRoutes");
@@ -18,8 +25,8 @@ app.use(express.json());
 
 // mount routes
 app.use("/api", authRoutes);           // /api/register, /api/login, /api/profile
-app.use("/api/subjects", subjectRoutes);
-app.use("/api/tasks", taskRoutes);
+app.use("/api/subjects", subjectRoutes); // Subject CRUD: /api/subjects/
+app.use("/api/tasks", taskRoutes); // Task CRUD: /api/tasks/
 
 // central error handler (must be last)
 app.use(errorHandler);

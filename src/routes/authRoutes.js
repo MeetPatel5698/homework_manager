@@ -1,3 +1,11 @@
+/**
+ * Auth Routes
+ * Endpoints:
+ *   POST /api/register  -> register a new user
+ *   POST /api/login     -> authenticate and return JWT
+ *   GET  /api/profile   -> get current user's profile (requires auth)
+ */
+
 const express = require("express");
 const router = express.Router();
 

@@ -1,3 +1,9 @@
+/**
+ * Subject Model:
+ * Represents a course/subject owned by a specific user.
+ * Each subject has a name and an optional hex color for UI.
+ */
+
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("../config/db");
 const User = require("./User");

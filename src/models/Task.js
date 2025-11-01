@@ -1,3 +1,9 @@
+/**
+ * Task Model:
+ * Represents an assignment/task owned by a user and linked to a subject.
+ * Stores title, optional description, due date, priority, and status.
+ */
+
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("../config/db");
 const User = require("./User");

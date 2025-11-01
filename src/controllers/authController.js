@@ -1,3 +1,10 @@
+/**
+ * Auth Controller:
+ *  - Register a new user (hash password, return JWT)
+ *  - Login existing user (verify password, return JWT)
+ *  - Return user's profile
+ */
+
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { validationResult } = require("express-validator");

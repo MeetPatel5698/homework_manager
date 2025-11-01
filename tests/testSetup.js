@@ -1,3 +1,13 @@
+/**
+ * Test Setup
+ * Purpose:
+ *  - Provide shared helpers and handles for integration tests:
+ *    * supertest `request`
+ *    * `resetDatabase()` to drop/recreate tables
+ *    * `getAuthToken()` to register/login and return a Bearer token
+ *    * exported Sequelize instance and models if tests need them
+ */
+
 require("dotenv").config(); // loads .env for DB + JWT
 
 const request = require("supertest");

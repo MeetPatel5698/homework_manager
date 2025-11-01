@@ -1,3 +1,11 @@
+/**
+ * Auth API Integration Tests
+ * Covers:
+ *  - POST /api/register   -> creates a user and returns JWT + public user
+ *  - POST /api/login      -> authenticates and returns JWT
+ *  - GET  /api/profile    -> requires Bearer token; returns public profile
+ */
+
 const {
   app,
   request,

@@ -1,3 +1,13 @@
+/**
+ * Authentication Middleware:
+ *   Verifies the JSON Web Token (JWT) sent in the "Authorization" header.
+ *   If valid, attaches the decoded user object to `req.user` and continues
+ *   to the next middleware/route handler.
+ *
+ * Header Format:
+ *   Authorization: Bearer <token>
+ */
+
 const jwt = require("jsonwebtoken");
 
 function authMiddleware(req, res, next) {
